@@ -10,7 +10,7 @@ source:
   sha256: d144a8a9164c45aaddcc1c4233d3603dd21bb4617716a5d02c4e6b06a75c1840
 
 build:
-  number: 2
+  number: 3
 
 outputs:
   - name: psiresp-base
@@ -21,7 +21,7 @@ outputs:
     
     requirements:
       host:
-        - python >=3.7
+        - python >=3.7, <3.10
         - pip
       run:
         - python >=3.7
@@ -45,10 +45,10 @@ outputs:
 
     requirements:
       host:
-        - python >=3.7
+        - python >=3.7, <3.10
         - pip
       run:
-        - python >=3.7
+        - python >=3.7, <3.10
         - geometric
         - rdkit
         - qcfractal >=0.15
