@@ -21,7 +21,7 @@ outputs:
     
     requirements:
       host:
-        - python >=3.7
+        - python >=3.7,<3.10
         - pip
       run:
         - python >=3.7
@@ -45,13 +45,13 @@ outputs:
 
     requirements:
       host:
-        - python >=3.7
+        - python >=3.7,<3.10
         - pip
       run:
-        - python >=3.7
+        - python >=3.7,<3.10
         - geometric
         - rdkit
-        - qcfractal >=0.15
+        - qcfractal >=0.15.8
         - requests
         - h5py <3.2
         - {{ pin_subpackage('psiresp-base', exact=True) }}
